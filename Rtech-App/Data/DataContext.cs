@@ -11,13 +11,22 @@ namespace Rtech_App.Data
     {
 
         //omda
-        public DataContext(DbContextOptions<DataContext> options) : base(options);
-
-        public DbSet<User> Users { get; set; }
-
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
 
 
-    }
+        }
+
+
+    public DbSet<User> Users { get; set; }
+
+    //protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //{
+    //    base.OnModelCreating(modelBuilder);
+    //    modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    //}
+
+}
 
 }
     
