@@ -10,7 +10,7 @@ namespace Rtech_App.Data
     public class DataContext : DbContext
     {
 
-        //omda
+      
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
 
